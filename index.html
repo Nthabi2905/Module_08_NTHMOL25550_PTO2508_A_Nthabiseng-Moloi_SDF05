@@ -1,54 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Footer Example</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-      <link href="./output.css" rel="stylesheet">
-</head>
-<body class=>
-    <footer class= >
-        <div class="container">
-            <footer>
-                <div class="container px-6 py-12 mx-auto">
-                    <div class="grid">
-                        <div class="sm:col-span-2">
-                            <h1 class="max-w-lg" >Subscribe.</h1>
-                            <div class="flex">
-                                <input id="email" type="text">
-                                <button class="w-full px-6 py-2.5 bg-white">
-                                    Subscribe
-                                </button>
-                            </div>
-                        </div>
-                        <div>
-                            <p class="text-[#313131]">Quick Link</p>
-                            <div class="flex">
-                                <a href="#">Home</a>
-                                <a href="#">Who We Are</a>
-                                <a href="#">Our Philosophy</a>
-                            </div>
-                        </div>
-                        <div>
-                            <p class="text-[#313131]">Technologies</p>
-                            <div class="">
-                                <a href="#">HTML</a>
-                                <a href="#">CSS</a>
-                                <a href="#">JavaScript</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <hr class="my-6 border-[#d86943]">
-                    
-                    <div class="flex">
-                        <a href="#">
-                            <img class="w-auto h-7" src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg" alt="">
-                        </a>
-                    </div>
-    </footer>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footer</title>
 
-</body>
+    <!-- Include Tailwind via CDN for quick use -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="font-[Poppins] bg-[#f5f5f5] leading-relaxed">
+    <footer
+      class="bg-[#5e9083] text-[#222] rounded-xl p-8 max-w-[1200px] mx-auto my-8 flex flex-col gap-8 md:flex-row md:flex-wrap md:justify-between md:items-start"
+    >
+      <!-- newsletter section -->
+      <div class="newsletter flex-1">
+        <h3 class="text-lg font-semibold mb-4">
+          Subscribe to our newsletter for updates.
+        </h3>
+        <form
+          class="flex flex-col gap-3 max-w-[400px] sm:flex-row sm:items-center"
+        >
+          <input
+            type="email"
+            placeholder="Email Address"
+            required
+            class="p-3 rounded-md text-base border-none outline-none flex-1"
+          />
+          <button
+            type="submit"
+            class="bg-[#d5673e] hover:bg-[#c15a33] text-white font-semibold rounded-md p-3 transition"
+          >
+            Subscribe
+          </button>
+        </form>
+      </div>
+
+      <!-- link section -->
+      <div
+        class="links flex flex-col gap-8 mt-8 md:mt-0 md:flex-row md:justify-between flex-1"
+      >
+        <div class="quick-links flex-1">
+          <h4 class="text-base font-semibold mb-3">Quick Links</h4>
+          <ul class="list-none space-y-2">
+            <li>
+              <a
+                href="#"
+                class="no-underline text-[#222] hover:text-white transition"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="no-underline text-[#222] hover:text-white transition"
+                >Who We Are</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="no-underline text-[#222] hover:text-white transition"
+                >Our Philosophy</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="Teachnologies flex-1">
+          <h4 class="text-base font-semibold mb-3">Technologies</h4>
+          <ul class="list-none space-y-2">
+            <li>
+              <a
+                href="#"
+                class="no-underline text-[#222] hover:text-white transition"
+                >HTML</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="no-underline text-[#222] hover:text-white transition"
+                >CSS</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="no-underline text-[#222] hover:text-white transition"
+                >JavaScript</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- divider -->
+      <hr class="border border-[#d5673e] my-8 w-full" />
+
+      <!-- footer logo -->
+      <div class="footer-logo text-center md:text-left w-full pt-4">
+        <a href="#">
+          <img
+            class="inline-block align-middle h-6"
+            src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg"
+            alt="CodeSpace Logo"
+          />
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>
